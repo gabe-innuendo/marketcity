@@ -147,6 +147,7 @@ input[type='submit']:hover, a.link-button:hover {
 
 .header-logo-container {
   margin: 1rem 0.5rem;
+  z-index: 999;
 }
 
 .header-logo-container img {
@@ -292,6 +293,8 @@ input[type='submit']:hover, a.link-button:hover {
   display: none;
   text-align: center;
   border-bottom: 1px solid #c6c6c6;
+  position: relative;
+  z-index: 999;
 }
 
 .navigation-menu-desktop .link-row {
@@ -305,6 +308,7 @@ input[type='submit']:hover, a.link-button:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  z-index: 999;
 }
 
 .navigation-menu-desktop .link-row li {
@@ -312,16 +316,7 @@ input[type='submit']:hover, a.link-button:hover {
   flex-basis: 0;
   max-width: 100%;
   border-right: 1px solid #c6c6c6;
-}
-
-.navigation-menu-desktop .link-row li.current_page_item a {
-  border-bottom: 4px #eac77d solid;
-  width: 100%;
-  margin: 0;
-}
-
-.navigation-menu-desktop .link-row li:last-child {
-  border-right: none;
+  /* Submenu Items */
 }
 
 .navigation-menu-desktop .link-row li a {
@@ -333,12 +328,66 @@ input[type='submit']:hover, a.link-button:hover {
   width: 100%;
   padding: 0.75rem;
   border-bottom: 4px #fff solid;
+  background-color: #fff;
+  z-index: 99;
 }
 
 .navigation-menu-desktop .link-row li a:hover {
   background-color: #eac77d;
   color: #fff;
   border-bottom: 4px #eac77d solid;
+}
+
+.navigation-menu-desktop .link-row li.current_page_item > a {
+  border-bottom: 4px #eac77d solid;
+  width: 100%;
+  margin: 0;
+}
+
+.navigation-menu-desktop .link-row li:last-child {
+  border-right: none;
+}
+
+.navigation-menu-desktop .link-row li .nav-link {
+  display: inline-block;
+}
+
+.navigation-menu-desktop .link-row li .inline-icon {
+  display: inline-block;
+}
+
+.navigation-menu-desktop .link-row li ul {
+  background-color: #242324;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: top 0.3s ease;
+  top: 0px;
+  z-index: -1;
+}
+
+.navigation-menu-desktop .link-row li ul li {
+  border-right: 1px solid #000000;
+}
+
+.navigation-menu-desktop .link-row li ul li a {
+  border-bottom: 4px solid #242324;
+  background-color: #242324;
+  color: #ffffff;
+  padding: 0.55rem;
+  z-index: 0;
+}
+
+.navigation-menu-desktop .link-row li ul li a:hover {
+  background-color: #383638;
+  border-bottom: 4px solid #383638;
 }
 
 .navigation-menu-desktop .desktop-link {
@@ -349,6 +398,10 @@ input[type='submit']:hover, a.link-button:hover {
 
 .navigation-menu-desktop .desktop-link:hover {
   color: #eac77d;
+}
+
+.navigation-menu-desktop li.menu-item-has-children:hover ul {
+  top: 47px;
 }
 
 .navigation-menu-mobile {

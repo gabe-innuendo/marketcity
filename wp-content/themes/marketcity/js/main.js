@@ -36,5 +36,9 @@
 
 	    });
 
+	    // Sub Menu Functionality
+
+		$(".menu-item-has-children > a").append(" <i class='fa fa-caret-down inline-icon' aria-hidden='true'></i>");
+
 	});
 })(jQuery);
