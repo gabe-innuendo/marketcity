@@ -522,7 +522,7 @@ input[type='submit']:hover, a.link-button:hover {
     font-size: 12px;
   }
   #opening-hours-pull-out {
-    top: 6.3rem;
+    top: 9rem;
   }
   #hamburger-menu {
     display: none;
@@ -853,6 +853,32 @@ input[type='submit']:hover, a.link-button:hover {
   }
   .posts-box .content-container {
     padding: 2rem;
+  }
+}
+
+/* Dark Page styles */
+.container-page-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.container-page-dark h1, .container-page-dark h2, .container-page-dark h3, .container-page-dark h4, .container-page-dark h5, .container-page-dark h6 {
+  color: #fff;
+}
+
+.container-page-dark .page-content {
+  margin-top: 40%;
+  padding: 0 2rem;
+}
+
+.container-page-dark .featured-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 62em) {
+  .container-page-dark .page-content {
+    margin-top: 1rem;
   }
 }
 
