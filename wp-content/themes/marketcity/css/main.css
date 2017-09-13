@@ -289,6 +289,10 @@ input[type='submit']:hover, a.link-button:hover {
   margin-top: 1rem;
 }
 
+.inline-icon {
+  padding-left: 5px;
+}
+
 .navigation-menu-desktop {
   display: none;
   text-align: center;
@@ -346,14 +350,6 @@ input[type='submit']:hover, a.link-button:hover {
 
 .navigation-menu-desktop .link-row li:last-child {
   border-right: none;
-}
-
-.navigation-menu-desktop .link-row li .nav-link {
-  display: inline-block;
-}
-
-.navigation-menu-desktop .link-row li .inline-icon {
-  display: inline-block;
 }
 
 .navigation-menu-desktop .link-row li ul {
@@ -451,6 +447,23 @@ input[type='submit']:hover, a.link-button:hover {
 .navigation-menu-mobile .nav-menu-container a {
   color: inherit;
   text-decoration: none;
+}
+
+.navigation-menu-mobile .nav-menu-container .menu-item-has-children ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+  background-color: #f6f6f6;
+}
+
+.navigation-menu-mobile .nav-menu-container .menu-item-has-children.active ul {
+  display: block;
+  max-height: 500px;
+}
+
+.navigation-menu-mobile .nav-menu-container .menu-item-has-children.active .inline-icon {
+  color: #eac77d;
 }
 
 .navigation-menu-mobile .nav-menu-container.open {

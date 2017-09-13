@@ -37,8 +37,10 @@
 	    });
 
 	    // Sub Menu Functionality
-
-		$(".menu-item-has-children > a").append(" <i class='fa fa-caret-down inline-icon' aria-hidden='true'></i>");
+		$(".menu-item-has-children > a .nav-link").append("<span>&nbsp;</span><i class='fa fa-caret-down inline-icon' aria-hidden='true'></i>");
+		$(".menu-mobile-menu-container .menu-item-has-children").click(function(){
+			$(this).toggleClass('active');
+		});
 
 	});
 })(jQuery);
