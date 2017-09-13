@@ -249,8 +249,6 @@ input[type='submit']:hover, a.link-button:hover {
   cursor: pointer;
   position: absolute;
   background-color: #212121;
-  width: 100%;
-  left: 0;
   top: 81px;
   z-index: 1;
   padding: 10px;
@@ -260,6 +258,13 @@ input[type='submit']:hover, a.link-button:hover {
 .opening-hours-section span {
   color: #fff;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 62em) {
+  .opening-hours-section {
+    width: 100%;
+    left: 0;
+  }
 }
 
 #opening-hours-pull-out.open {
