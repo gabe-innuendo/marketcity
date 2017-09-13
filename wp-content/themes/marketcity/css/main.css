@@ -114,6 +114,22 @@ input[type='submit']:hover, a.link-button:hover {
   color: #fff;
 }
 
+.social-button.white {
+  background-color: #fff;
+}
+
+.social-button.white i {
+  color: #242324;
+}
+
+.social-button.white:hover {
+  background-color: #eac77d;
+}
+
+.social-button.white:hover i {
+  color: #242324;
+}
+
 .gold-text {
   color: #eac77d !important;
 }
@@ -886,4 +902,60 @@ input[type='submit']:hover, a.link-button:hover {
 
 .accordion-content.default {
   display: block;
+}
+
+/* Footer styles */
+.main-footer {
+  width: 100%;
+  background-color: #242324;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.main-footer .container-fluid {
+  max-width: 1440px;
+}
+
+.main-footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-footer .logo-section {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.main-footer .footer-logo-container {
+  width: 100%;
+}
+
+.main-footer .footer-logo-container img {
+  max-width: 40%;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.main-footer .social-section {
+  text-align: right;
+}
+
+@media only screen and (max-width: 48em) {
+  .main-footer, .main-footer .social-section {
+    text-align: center;
+  }
+  .main-footer .footer-logo-container {
+    width: 100%;
+  }
+  .main-footer .footer-logo-container img {
+    max-width: 40%;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .main-footer .footer-logo-container img {
+    max-width: 70%;
+  }
 }
