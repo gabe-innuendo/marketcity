@@ -5,7 +5,6 @@
             	<div class="footer-logo-container">
             		<img src="<?php get_image_url(); ?>/market-city-logo.svg" alt="Market City Logo"/>
             	</div>
-            	<h5>Market City</h5>
             	<address>
             	9-13 Hay Street <br />
             	Haymarket NSW 2000
@@ -33,6 +32,9 @@
             	<section class="social-media-buttons">
 		            <a target="_blank" class="social-button white" href="https://www.facebook.com/marketcity/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 		            <a target="_blank" class="social-button white" href="https://www.instagram.com/marketcity/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		            <a target="_blank" class="social-button white" href="http://marketcity.com.au/wechat/qr.jpg"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+		            <a target="_blank" class="social-button white" href="https://plus.google.com/108279297985227828459"><i class="fa fa-google-plus" aria-hidden="true"></i>
+</a>
 		        </section>
             </div>
         </div>

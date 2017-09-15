@@ -966,7 +966,8 @@ input[type='submit']:hover, a.link-button:hover {
   width: 100%;
   background-color: #242324;
   color: #ffffff;
-  padding: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 .main-footer .container-fluid {
@@ -1017,17 +1018,38 @@ input[type='submit']:hover, a.link-button:hover {
   }
 }
 
+/* City Student Styles */
+.student-offer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f6f6f6;
+  border: 5px solid white;
+}
+
+.student-offer img {
+  max-width: 50%;
+}
+
 /* Gravity forms styles */
+.gform_wrapper {
+  width: 100%;
+}
+
 .gfield_label {
   color: #8d8d8c;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: 1px;
+  margin-bottom: 0px !important;
 }
 
 .gfield_label .gfield_required {
   color: #c41530 !important;
+}
+
+.gfield {
+  margin-bottom: 1rem;
 }
 
 .gform_confirmation_wrapper {

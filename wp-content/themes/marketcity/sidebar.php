@@ -25,6 +25,8 @@
         <section class="social-media-buttons">
             <a target="_blank" class="social-button" href="https://www.facebook.com/marketcity/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a target="_blank" class="social-button" href="https://www.instagram.com/marketcity/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a target="_blank" class="social-button" href="http://marketcity.com.au/wechat/qr.jpg"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+            <a target="_blank" class="social-button" href="https://plus.google.com/108279297985227828459"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
         </section>
         <hr />
         <section class="sidebar-content-widget">
