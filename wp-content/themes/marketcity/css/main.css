@@ -1058,3 +1058,7 @@ input[type='submit']:hover, a.link-button:hover {
   border-bottom: 2px solid #39d7ab;
   padding: 1rem 0;
 }
+
+.ginput_container input[type=file] {
+  border: none;
+}
