@@ -850,6 +850,10 @@ input[type='submit']:hover, a.link-button:hover {
   color: inherit;
 }
 
+.posts-box .content-container p {
+  margin-top: 0.35rem;
+}
+
 .posts-box .content-container .post-date-single {
   margin: 0;
   color: #c6c6c6;

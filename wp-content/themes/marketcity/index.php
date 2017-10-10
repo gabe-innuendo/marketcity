@@ -16,7 +16,7 @@
                                         <div class="content-container">
                                             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                             <p class="post-date-single"><?php the_date('F j, Y'); ?></p>
-                                            <p><?php the_excerpt(); ?></p><br />
+                                            <?php the_excerpt(); ?><br />
                                             <a href="<?php the_permalink(); ?>" class="link-button">Find out more</a>
                                         </div>
                                     </div>
