@@ -10,6 +10,7 @@
                         </div>
                         <div class="col-sm-9">
                         <h1><?php the_title(); ?></h1>
+                        <p class="post-date-single"><?php the_date('F j, Y'); ?></p>
 	                	<?php the_content(); ?>
                         <hr />
                         <h3>What else is happening</h3>

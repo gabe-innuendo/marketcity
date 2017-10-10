@@ -677,6 +677,12 @@ input[type='submit']:hover, a.link-button:hover {
 }
 
 /* Page content styles */
+.post-date-single {
+  color: #c41530;
+  font-weight: bold;
+  margin-top: 0;
+}
+
 .col-md-8 .page-content {
   padding-right: 2rem;
 }
@@ -835,9 +841,19 @@ input[type='submit']:hover, a.link-button:hover {
   height: 270px;
 }
 
+.posts-box .content-container h4 {
+  margin-bottom: 0;
+}
+
 .posts-box .content-container h4 a {
   text-decoration: none;
   color: inherit;
+}
+
+.posts-box .content-container .post-date-single {
+  margin: 0;
+  color: #c6c6c6;
+  font-weight: normal;
 }
 
 .posts-box .content-container .link-button {
